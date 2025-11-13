@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Listings - Cabinet Crouz Services Immo</title>
+    <meta
+      name="description"
+      content="Découvrez nos parcelles, voitures, maisons et chambres disponibles à la vente et location"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="NosListing.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <h1>Cabinet <span>Crouz</span></h1>
+        </div>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="Acceuil.html">Accueil</a></li>
+            <li><a href="NosListing.html">Nos offres</a></li>
+            <!-- <li><a href="#apropos">À propos</a></li> -->
+            <li><a href="NousContacter.html">Nous contacter</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="listings-hero">
+      <div class="container">
+        <h1>Nos Biens Disponibles</h1>
+        <p>
+          Découvrez notre sélection de parcelles, voitures, maisons et chambres
+          à vendre ou louer
+        </p>
+        <a href="#listings" class="btn">Voir les annonces</a>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+      <div class="container">
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">
+            Tous les biens
+          </button>
+          <button class="filter-btn" data-filter="parcelle">Parcelles</button>
+          <button class="filter-btn" data-filter="voiture">Voitures</button>
+          <button class="filter-btn" data-filter="maison">Maisons</button>
+          <button class="filter-btn" data-filter="chambre">Chambres</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section class="listings" id="listings">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nos Listings</h2>
+          <p>
+            Explorez notre catalogue de biens immobiliers et véhicules
+            disponibles
+          </p>
+        </div>
+
+        <div class="listings-grid">
+          <!-- Parcelle 1 -->
+          <div class="listing-card fade-in" data-category="parcelle">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Parcelle résidentielle"
+              />
+              <span class="listing-badge">À Vendre</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Parcelle Résidentielle</h3>
+                <div class="listing-price">12.500.000 FCFA</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Godomey, Cotonou</span>
+              </div>
+              <p class="listing-description">
+                Superbe parcelle de 500m² située dans un quartier résidentiel
+                calme et en pleine expansion. Terrain plat, viabilisé avec accès
+                facile.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-arrows-alt"></i>
+                  <span>500 m²</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-tint"></i>
+                  <span>Eau disponible</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-bolt"></i>
+                  <span>Électricité</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Parcelle 2 -->
+          <div class="listing-card fade-in" data-category="parcelle">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Parcelle commerciale"
+              />
+              <span class="listing-badge">À Vendre</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Parcelle Commerciale</h3>
+                <div class="listing-price">25.000.000 FCFA</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Akpakpa, Cotonou</span>
+              </div>
+              <p class="listing-description">
+                Parcelle idéale pour projet commercial de 800m² située en zone à
+                forte activité économique. Accès direct à la route principale.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-arrows-alt"></i>
+                  <span>800 m²</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-road"></i>
+                  <span>Route goudronnée</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-store"></i>
+                  <span>Zone commerciale</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Voiture 1 -->
+          <div class="listing-card fade-in" data-category="voiture">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Toyota RAV4"
+              />
+              <span class="listing-badge">À Vendre</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Toyota RAV4</h3>
+                <div class="listing-price">8.500.000 FCFA</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Disponible à Cotonou</span>
+              </div>
+              <p class="listing-description">
+                SUV Toyota RAV4 2018 en excellent état. Faible kilométrage,
+                entretien régulier effectué. Intérieur cuir, climatisation,
+                caméra de recul.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span>45,000 km</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-gas-pump"></i>
+                  <span>Essence</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-cog"></i>
+                  <span>Automatique</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Voiture 2 -->
+          <div class="listing-card fade-in" data-category="voiture">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Mercedes Classe C"
+              />
+              <span class="listing-badge">À Vendre</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Mercedes Classe C</h3>
+                <div class="listing-price">15.000.000 FCFA</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Disponible à Cotonou</span>
+              </div>
+              <p class="listing-description">
+                Mercedes-Benz Classe C 2020, premium. Toit ouvrant, système
+                audio haut de gamme, sièges chauffants, toutes options.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span>30,000 km</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-gas-pump"></i>
+                  <span>Diesel</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-cog"></i>
+                  <span>Automatique</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maison 1 -->
+          <div class="listing-card fade-in" data-category="maison">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Villa moderne"
+              />
+              <span class="listing-badge">À Louer</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Villa Moderne 4 Pièces</h3>
+                <div class="listing-price">250.000 FCFA/mois</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Calavi, Abomey-Calavi</span>
+              </div>
+              <p class="listing-description">
+                Superbe villa moderne de 4 pièces avec jardin et garage. Cuisine
+                équipée, salon spacieux, 2 salles de bain. Quartier résidentiel
+                calme.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-bed"></i>
+                  <span>4 chambres</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-bath"></i>
+                  <span>2 salles de bain</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-car"></i>
+                  <span>Garage</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maison 2 -->
+          <div class="listing-card fade-in" data-category="maison">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Maison familiale"
+              />
+              <span class="listing-badge">À Vendre</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Maison Familiale 5 Pièces</h3>
+                <div class="listing-price">35.000.000 FCFA</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Haie Vive, Cotonou</span>
+              </div>
+              <p class="listing-description">
+                Belle maison familiale de 5 pièces avec grande cour clôturée.
+                Idéale pour famille nombreuse. Proche écoles et commerces.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-bed"></i>
+                  <span>5 chambres</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-bath"></i>
+                  <span>3 salles de bain</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-tree"></i>
+                  <span>Grande cour</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chambre 1 -->
+          <div class="listing-card fade-in" data-category="chambre">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Chambre meublée"
+              />
+              <span class="listing-badge">À Louer</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Chambre Meublée</h3>
+                <div class="listing-price">45.000 FCFA/mois</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Zongo, Cotonou</span>
+              </div>
+              <p class="listing-description">
+                Chambre meublée dans résidence sécurisée. Lit double, armoire,
+                bureau. Accès cuisine et salle de bain partagée. Eau et
+                électricité inclus.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-wifi"></i>
+                  <span>Wi-Fi inclus</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Résidence sécurisée</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-utensils"></i>
+                  <span>Cuisine équipée</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chambre 2 -->
+          <div class="listing-card fade-in" data-category="chambre">
+            <div class="listing-images">
+              <img
+                src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Chambre étudiant"
+              />
+              <span class="listing-badge">À Louer</span>
+            </div>
+            <div class="listing-content">
+              <div class="listing-header">
+                <h3 class="listing-title">Chambre Étudiant</h3>
+                <div class="listing-price">35.000 FCFA/mois</div>
+              </div>
+              <div class="listing-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Abomey-Calavi</span>
+              </div>
+              <p class="listing-description">
+                Chambre simple idéale pour étudiant. Proche campus
+                universitaire. Literie fournie, accès cuisine et salle de bain
+                commune. Calme et sécurisé.
+              </p>
+              <div class="listing-features">
+                <div class="feature">
+                  <i class="fas fa-university"></i>
+                  <span>Proche université</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-bed"></i>
+                  <span>Literie fournie</span>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>Sécurisé</span>
+                </div>
+              </div>
+              <div class="listing-actions">
+                <button class="action-btn">
+                  <a href="https://wa.me/2290190732004">Avoir les détails</a>
+                </button>
+                <button class="action-btn primary">
+                  <a href="https://wa.me/2290190732004">Contacter</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Cabinet Crouz</h3>
+            <p>
+              Découvrez Crouz, l'agent immobilier célibataire le plus frais et
+              heureux, prêt à vous servir à moindre coût. Votre partenaire de
+              confiance pour tous vos projets immobiliers et de construction.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h4>Liens rapides</h4>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="NosListing.html">Nos offres</a></li>
+              <!-- <li><a href="#apropos">À propos</a></li> -->
+              <li><a href="NousContacter.html">Nous contacter</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact</h4>
+            <p><i class="fas fa-phone"></i> (+229) 90 73 20 04</p>
+            <p><i class="fas fa-envelope"></i> crouzimmo@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Cotonou, Bénin</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Cabinet Crouz Services Immo. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="NosListing.js"></script>
+  </body>
+</html>
